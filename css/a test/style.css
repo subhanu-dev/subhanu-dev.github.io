@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(232, 176, 176);
+    height:100%;
+}
+nav{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    
+
+}
+
+
+  
+
+
+
+footer{
+    display:flex;
+    background-color: blue;
+    position:absolute;
+    bottom:0%;
+    width:100%;
+  justify-content: center;
+}
+footer p{
+    text-align: center;
+}

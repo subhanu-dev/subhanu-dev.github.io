@@ -1,0 +1,31 @@
+/********************portfolio*****************************************************************************************************/
+
+
+.portfolio-main{
+    min-height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#magic{
+    color:#0a66c2;
+  
+}
+.portfolio-txt{
+    font-size:.5rem;
+}
+
+
+@media only screen and (max-width:700px){   
+.portfolio-txt{
+    font-size:.4rem;
+}
+}
+@media only screen and (max-width:500px){   
+.portfolio-txt{
+   width:230px;
+
+}
+}

@@ -1,0 +1,969 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+   font-family: Lato, Arial;
+   text-decoration: none;
+   
+
+}
+
+
+    
+
+body
+{
+   
+
+min-width:100%;
+min-height: 100vh;
+overflow-x:hidden;
+   overflow-y:auto;
+
+}
+/*.bro{
+     background-image:url("pic1.jpg");
+background-size:cover;
+background-repeat:no-repaeat;
+}
+*/
+
+/*header eka meeka utto */
+nav
+{
+    background-color: rgb(16, 15, 14);    
+    padding:2px;
+    margin:0px;
+    display:flex;
+   
+  box-shadow: 0px 0px 4px black;
+
+    justify-content: space-between;
+
+   
+    border-bottom-right-radius:25px;
+    flex-grow:1;
+}
+nav .name
+{
+color:white;
+font-family: Unbounded, Arial;
+padding-left:15px;
+font-weight: 500 ;
+
+font-size: 20px;
+padding-top: 30px;
+text-decoration: none;
+
+
+}
+nav .navbar-links{
+
+    padding-right: 50px;
+    padding-top:30px ;
+    
+}
+
+nav .navbar-links li
+{
+display: inline-block;
+
+list-style: none;
+padding:5px ;
+
+font-size: 17px;
+
+
+
+
+}
+
+
+nav .navbar-links li a{
+    text-decoration: none;
+   
+    font-weight: 500;
+    font-family: Lato,Arial;
+    color:white;
+    transition:text-decoration .5s;
+}
+
+/*nav-action style obana kaali*/
+nav .navbar-links li a:hover{
+    cursor:pointer;
+text-decoration:underline;
+  
+  
+
+}
+nav .navbar-links .active{
+    
+    text-decoration: underline;
+    font-weight: 700;
+}
+/*meekata kiyanne footer style kiyala*/
+
+.footer{
+    background-color: black;
+   display:flex;
+   position: absolute;
+justify-content: center;
+
+   
+  bottom:0%;
+    height:30px;
+   
+    width:100%;
+  
+}
+.footer .footer-text{
+    color:rgb(188, 184, 184);
+    font-family: Chivo Mono,sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+   
+    padding-top: .5rem;
+    
+   
+ 
+}
+.footer .footer-text i:hover{
+    color:red;
+
+}
+
+
+/************************************************home page styles-body*********************************************************************/
+/*meeka thama header eken pahala kanda*/
+main{
+    height:100%;/*this ougth to be deleted!*/
+/*background-image:url("pinthura2.jpeg");
+background-size:cover;
+background-repeat:no-repaeat;
+*/
+
+
+}
+.imagentext{
+    margin-top: 10px;
+    display:flex;
+    gap:4rem;
+    
+    width:100%;
+    
+}
+
+
+
+    
+
+.imagentext .image{
+    
+   
+    padding-left: 50px;
+    padding-top: 20px;
+    
+    
+}
+.imagentext .image .mypic{
+    
+    border-radius: 2500px;
+    max-width: 350px;
+ 
+   
+    
+}
+.imagentext .text-beside .hey{
+    font-family: Unbounded, Arial;
+    font-size:1.3rem;
+}
+.imagentext .text-beside .description{
+    font-family:lato,sans-serif;
+    font-size:1.2rem;
+}
+.imagentext .text-beside{
+    padding-top:100px ;
+}
+
+.imagentext .text-beside h2 span{
+    display:block;
+    font-size: .8rem;
+    color:rgb(13, 117, 27);
+    margin-top: .3rem;
+
+}
+.imagentext .text-beside hr{
+    width:22rem;
+    background-color:rgb(98, 96, 96);
+}
+.imagentext .text-beside .about-button{
+height:50px;
+width:200px;
+border: 5px solid rgb(19, 18, 18);
+
+border-top-right-radius: 15px;
+background-color:rgb(1, 1, 80);
+transition: box-shadow .15s,height .15s,width .15s;
+margin-top: 1.2rem;
+animation-name:colorch;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+animation-delay: 2s;
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+
+
+}
+.imagentext .text-beside .about-button .about-text{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color:rgb(243, 242, 242);
+    padding-left:50px;
+    padding-right:50px;
+    font-weight: 700;
+    
+}
+/*home kandee obana kaali*/
+.imagentext .text-beside .about-button:hover{
+    cursor:pointer;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.5);
+   
+   
+}
+
+
+@keyframes colorch{
+    100%{
+      background-color: rgb(152, 8, 8);  
+        
+    }
+}
+   
+
+.imagentext .text-beside .about-button:active{
+    height:65px;
+    width:255px;
+}
+
+
+
+
+
+
+/*************************************contact-page****************************************************************************************************/
+/*the contact me page styles mewwa*/
+/*
+.contact-main{
+    height:80vh;
+    display:flex;
+   justify-content: center;
+   align-items: center;
+}
+main .social-links{
+   box-shadow: 0px 0px 10px grey;
+   width:50%;
+   height:65%;
+   
+   border-top-right-radius: 1rem;
+  
+   
+
+}
+main .social-links h2{
+    font-family: Unbounded,sans-serif;
+    margin:1rem;
+
+}
+main .social-links a{
+    text-decoration: none;
+    color:rgb(6, 6, 123);
+    font-weight: 600;
+    font-size: 25px;
+    text-align:right;
+    font-family: Lato,sans-serif;
+    transition: all .2s;
+    padding:1rem;
+    
+    
+}
+main .social-links a:hover,.contactform:hover{
+    color:rgb(152, 8, 8);
+    padding-left: 1.5rem;
+    text-shadow: 1px 5px 10px rgba(0,0,0,.2);
+}
+main .social-links i{
+    
+   font-size: 100px;
+  display: inline-block;
+  padding-right: 5rem;
+  transition: all .5s;
+  
+   
+}
+main .social-links #linked:hover{
+    color:#0a66c2;
+}
+main .social-links .linked{
+    display:flex;
+    justify-content: space-between;
+   
+}
+main .social-links .mail{
+    display:flex;
+    justify-content: space-between;
+}
+main .social-links .mail #mail:hover{
+    transform: translate(3px,3px)}
+.contactform{
+    padding:1rem;
+    
+    transition: all .5s;
+}
+.contactform .form{
+    font-size: 1rem;
+    color:rgb(152, 8, 8);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+
+/********************portfolio*****************************************************************************************************/
+/*
+
+.portfolio-main{
+    min-height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#magic{
+    color:#0a66c2;
+  
+}
+.portfolio-txt{
+    font-size:.5rem;
+}
+
+
+
+
+
+/*************************About*****************************************************************/
+/*
+
+.about-main{
+    display:grid;
+    
+    grid-auto-rows:minmax(10vh,auto);
+   height:100%;
+   padding:2rem;
+    
+    
+
+}
+.about-main .name-bar{
+    font-size: 1.2rem;
+}
+.about-main .name-bar{
+    display:flex;
+    justify-content: space-between;
+    grid-column:1/3 ;
+    
+   
+
+}
+.about-main .name-bar .name h2{
+font-size: 1.6rem;
+}
+.about-main .education .heading, .about-main .experience .heading, .about-main .languages .heading{
+    font-size: 1.2rem;
+}
+.about-main .para{
+    grid-column: 1/3;
+    
+}
+.about-main .education{
+    display:flex;
+    grid-column: 1/3;
+    flex-direction: column;
+}
+.about-main .education .x{
+    display:flex;
+    justify-content: space-between;
+
+}
+.about-main .x .icon img{
+    width:150px;
+   
+   
+}
+.about-main .x .life{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   width:30rem;
+   
+}
+.about-main .x .life .duration{
+ color:rgb(164, 161, 161);
+}
+ .cv-button button{
+    color:White;
+    background-color: black;
+    width:15rem;
+    height:3rem;
+    border-top-right-radius: 1.5rem;
+    border-radius:10px 30px 1px 10px;
+    transition:all .7s;
+    font-weight: 700;
+  font-size: 18px;
+
+}
+.cv-button button:hover{
+    cursor:pointer;
+    background-color: rgb(20, 140, 215);
+    color:black;
+}
+.about-main .projects{
+    grid-column:1/3;
+    margin:1rem;
+  
+    
+}
+.about-main .projects a{
+    color:black;
+    font-size: 25px;
+}
+
+
+.about-main .cv-button{
+  grid-column: 1/3;
+  margin: 1rem;
+}
+
+   
+ .about-main .projects button{
+   
+    background-color: black;
+    width:12rem;
+    height:3rem;
+    border-top-right-radius: 1.5rem;
+    border-radius:10px 30px 1px 10px;
+    transition:all .7s;
+
+   
+
+ }
+.about-main .projects button:hover{
+
+cursor:pointer;
+    background-color: rgb(20, 140, 215);
+    color:black;}
+
+  
+ .about-main .projects button a{
+    color:White;
+    font-weight: 700;
+    font-size: 18px;}
+
+
+.linkedin-abt a i{
+    
+    font-size: 30px;
+    color:#0a66c2;
+  
+}
+.about-main .para{
+    padding-bottom: 1rem;
+}
+.footerabt{
+    background-color: black;
+   display:flex;
+   position: absolute;
+justify-content: center;
+
+   
+  
+    height:30px;
+   
+    width:100%;
+  
+}
+.footerabt .footer-text{
+    color:rgb(188, 184, 184);
+    font-family: Chivo Mono,sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+   
+    padding-top: .5rem;
+    
+   
+ 
+}
+.footerabt .footer-text i:hover{
+    color:red;
+
+}
+
+
+
+/***responsiveness -homepagr***************************************************/
+/*when we are making desktop first ones and making it down, use max-width*/
+
+
+@media only screen and (max-width:1050px)
+{  
+
+.imagentext{
+    margin-top: 10px;
+    display:flex;
+    gap:3rem;
+    
+  
+    
+}
+
+
+
+    
+
+.imagentext .image{
+    
+   
+    padding-left: 50px;
+    padding-top: 20px;
+    
+    
+}
+.imagentext .image .mypic{
+    
+    border-radius: 2500px;
+    max-width: 300px;
+ 
+   
+    
+}
+.imagentext .text-beside .hey{
+    font-family: Unbounded, Arial;
+    font-size:1.2rem;
+}
+.imagentext .text-beside .description{
+    
+    font-size:1.1rem;
+}
+.imagentext .text-beside{
+    padding-top:100px ;
+}
+
+.imagentext .text-beside h2 span{
+   
+    font-size: .8rem;
+    color:rgb(13, 117, 27);
+    margin-top: .3rem;
+
+}
+.imagentext .text-beside hr{
+    width:20rem;
+    background-color:rgb(98, 96, 96);
+}
+.imagentext .text-beside .about-button{
+height:45px;
+width:180px;
+border: 5px solid rgb(19, 18, 18);
+
+
+}
+.imagentext .text-beside .about-button .about-text{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    
+    padding-left:50px;
+    padding-right:50px;
+    
+    
+}
+   
+}
+
+@media only screen and (max-width:870px){
+    
+    .imagentext .image .mypic{
+    
+    border-radius: 2000px;
+    max-width: 250px;
+
+}
+
+
+}
+
+
+
+
+ @media only screen and (max-width:700px)
+ {   
+    
+nav .name
+{
+
+
+font-size: 15px;
+padding-top: 30px;
+
+
+}
+nav .navbar-links{
+
+    padding-right: 50px;
+    padding-top:30px ;
+    
+}
+
+nav .navbar-links li
+{
+display: inline-block;
+
+list-style: none;
+padding:5px ;
+
+font-size: 15px;
+}
+
+body{
+         overflow-x:visible;
+   
+}
+.imagentext{
+    
+    gap:2rem;
+    align-items:center;
+   
+ }
+.imagentext .image .mypic{
+    
+    border-radius: 2500px;
+    max-width: 170px;
+
+   .imagentext .text-beside hr{
+    width:16rem;
+   }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:570px){
+
+ nav
+{
+    background-color: rgb(16, 15, 14);    
+    padding:1px;
+    margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+   
+}
+nav .name
+{
+
+padding-left:10px;
+font-weight: 500 ;
+
+font-size: 15px;
+padding-top: 7px;
+
+
+
+}
+nav .navbar-links{
+
+    padding-right: 50px;
+    padding-top:8px ;
+    
+}
+
+main{
+   height:100%;}/*this ougth to be deleted!*/
+
+.imagentext{
+    margin-top: 10px;
+    display:flex;
+    gap:1rem;
+    
+    width:100%;
+    
+}
+
+
+
+    
+
+.imagentext .image{
+    
+   
+    padding-left: 20px;
+    padding-top: 20px;
+    
+    
+}
+.imagentext .image .mypic{
+    
+    border-radius: 2500px;
+    max-width: 160px;
+
+    
+}
+.imagentext .text-beside .hey{
+    font-family: Unbounded, Arial;
+    font-size:1.1rem;
+}
+.imagentext .text-beside .description{
+    font-family:lato,sans-serif;
+    font-size:1rem;
+}
+.imagentext .text-beside{
+    padding-top:100px ;
+}
+
+.imagentext .text-beside h2 span{
+    display:block;
+    font-size: .7rem;
+    color:rgb(13, 117, 27);
+    margin-top: .3rem;
+
+}
+.imagentext .text-beside hr{
+    width:12rem;
+    background-color:rgb(98, 96, 96);
+}
+.imagentext .text-beside .about-button{
+height:40px;
+width:155px;
+border: 3px solid rgb(19, 18, 18);
+
+border-top-right-radius: 15px;
+background-color:rgb(1, 1, 80);
+transition: box-shadow .15s,height .15s,width .15s;
+margin-top: 1.2rem;
+
+
+}
+.imagentext .text-beside .about-button .about-text{
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color:rgb(243, 242, 242);
+    padding-left:50px;
+    padding-right:50px;
+    font-weight: 700;
+    
+}
+/*home kandee obana kaali*/
+
+
+.imagentext .text-beside .about-button:active{
+    height:50px;
+    width:200px;
+}
+.footer{
+   
+    height:25px;
+   
+ 
+}
+
+
+}
+
+@media only screen and (max-width:420px){
+nav
+{
+    background-color: rgb(16, 15, 14);    
+    padding:1px;
+    margin:0px;
+    display:flex;
+    flex-wrap:wrap;
+   
+}
+nav .name
+{
+
+padding-left:10px;
+font-weight: 500 ;
+
+font-size: 15px;
+padding-top: 7px;
+
+
+
+}
+nav .navbar-links{
+
+    padding-right: 50px;
+    padding-top:8px ;
+    
+}
+
+main{
+    height:100%;}/*this ougth to be deleted!*/
+/
+.imagentext{
+    margin-top: 10px;
+    display:flex;
+    gap:1rem;
+    
+    width:100%;
+    
+}
+
+
+
+    
+
+.imagentext .image{
+    
+   
+    padding-left: 20px;
+    padding-top: 20px;
+    
+    
+}
+.imagentext .image .mypic{
+    
+    border-radius: 2500px;
+    max-width: 150px;
+
+    
+}
+.imagentext .text-beside .hey{
+    font-family: Unbounded, Arial;
+    font-size:1rem;
+}
+.imagentext .text-beside .description{
+    font-family:lato,sans-serif;
+    font-size:1rem;
+}
+.imagentext .text-beside{
+    padding-top:100px ;
+}
+
+.imagentext .text-beside h2 span{
+    display:block;
+    font-size: .6rem;
+    color:rgb(13, 117, 27);
+    margin-top: .5rem;
+
+}
+.imagentext .text-beside hr{
+    width:10rem;
+    background-color:rgb(98, 96, 96);
+}
+.imagentext .text-beside .about-button{
+height:40px;
+width:155px;
+border: 3px solid rgb(19, 18, 18);
+
+border-top-right-radius: 15px;
+background-color:rgb(1, 1, 80);
+
+margin-top: 1.2rem;
+
+
+}
+.imagentext .text-beside .about-button .about-text{
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color:rgb(243, 242, 242);
+    padding-left:20px;
+    padding-right:20px;
+    font-weight: 700;
+    
+}
+
+}
+@media only screen and (max-width:350px){
+    nav
+{
+    
+    padding:2px;
+    margin:0px;
+    
+
+    
+   
+}
+nav .name
+{
+
+padding-left:7px;
+font-weight: 500 ;
+
+font-size: 13px;
+padding-top: 7px;
+
+
+}
+nav .navbar-links{
+padding-right: 50px;
+    padding-top:8px ;
+    
+    
+}
+
+nav .navbar-links li
+{
+
+padding:5px ;
+
+font-size: 14px;
+
+
+
+
+}
+
+
+.imagentext .image .mypic{
+    
+    border-radius: 2500px;
+    max-width: 75px;
+
+    
+}
+.imagentext .text-beside .hey{
+    font-family: Unbounded, Arial;
+    font-size:.9rem;
+}
+.imagentext .text-beside .description{
+    font-family:lato,sans-serif;
+    font-size:.9rem;
+}
+.imagentext .text-beside .about-button{
+height:30px;
+width:100px;
+
+
+border-top-right-radius: 10px;
+}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="css/contactsyles.css">
+    <script src="https://kit.fontawesome.com/d89352fd46.js" crossorigin="anonymous"></script></head>
+<script language="JavaScript" type="text/javascript"src="JS/main.js"defer></script>
+<body>   
+    <nav>
+<div class="link">
+        <a href="contact.html" id="goback">GO BACK <i class="fa-solid fa-rotate-left"></i></a>
+</div>
+    </nav>
+    <div class="contact">
+     
+        <table align="center">
+            <caption>
+                <h2>Contact Form <i class="fa-regular fa-address-card"></i></h2>
+            </caption>
+            <tr>
+                <form action="2.php" method="get">
+
+
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" placeholder="*" required></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="subject">Subject:</label></td>
+                <td> <input type="text" id="subject" placeholder="*"required></td>
+            </tr>
+
+            <tr class="txt">
+                <td> <label for="text">Message</label></td>
+                <td><textarea id="text"></textarea> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <p>Required fields are marked as *</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" id="check"><label for="check">I am not a robot!</label></td>
+            </tr>
+            <tr>
+                <td class="button"><button type="submit"id="submit">Submit</button></td>
+                <td><button type="reset"id="reset">Reset</button></td>
+            </tr>
+
+            </form>
+            </tr>
+            <tr>
+                <td colspan="2" id="dummy"></td>
+            </tr>
+        </table>
+    </div>
+   
+   
+</body>
+</html>
